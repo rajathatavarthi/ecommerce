@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HP:Lease</title>
+	<!-- bootstrap-css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--// bootstrap-css -->
+	<!-- css -->
+	<link rel="stylesheet" href="css/leasecomm.css" type="text/css" media="all" />
+	<!--// css -->
+	<!-- font-awesome icons -->
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- //font-awesome icons -->
+</head>
+
+<body>
+    <!-- Header -->
+	<div class="header">
+		<div class="main_header">
+			<div class="header_nav">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header navbar-left">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html"><img src="images/logo.png"/></a>
+					</div>
+					
+					<div class="collapse navbar-collapse navbar-right">
+						<nav class="nav_starts">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">Home</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Buy <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="buyres.html">Residential</a></li>
+										<li><a href="buycomm.html">Commercial</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Rent <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="rentres.html">Residential</a></li>
+										<li><a href="rentcomm.html">Commercial</a></li>
+									</ul>
+								</li>
+								<li class="dropdown active">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Lease <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="leaseres.html">Residential</a></li>
+										<li><a href="#">Commercial</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Partners <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="dealers.html">Dealers</a></li>
+										<li><a href="builders.html">Builders</a></li>
+									</ul>
+								</li>
+								<li><a href="login.html">Login/Register</a></li>
+								<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" ><i class="fa fa-bars fa-1x" aria-hidden="true"></i></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="profile.html">My Profile</a></li>
+										<li><a href="shortlist.html">My Shortlist</a></li>
+										<li><a href="sell.html">Sell/Rent Property</a></li>
+										<li><a href="news.html">News</a></li>
+										<li><a href="price.html">Price Trends</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+				    </div>	
+				</nav>
+				<form action="#" method="post">
+					<input id="locationTextField" type="text" placeholder="Search....">
+					<input type="submit" value="Search">
+				</form>
+			</div>
+		</div>
+	</div>
+    <!-- Header -->
+    
+	<!--sub_menu-->
+	<div class="second_nav">
+		<div class="scnd_nav_inner">
+			<ul class="scnd_nav_list">
+				<li><a href="index.html">Home</a><span>|</span></li>
+				<li>Lease<span>|</span></li>
+				<li>Commercial</li>
+			</ul>
+		</div>
+	</div>
+	<!--//sub_menu-->  
+    
+	<br/><br/><br/>
+	<!-- body -->
+	<div class="container-fluid res_body">
+		<div class="row">
+			<h1>Featured Commercial Properties</h1>
+			<div class="col-md-1"></div>
+			<div class="col-md-4">
+				<div id="left" class="filter">
+					<br/>
+					<select>
+						<option>Sort By</option>
+						<option>Relevance</option>
+						<option>Date:Newest</option>
+						<option>Price:Low-High </option>
+						<option>Price:High-Low </option>
+					</select>
+					<hr/>
+					<b>POSTED BY</b><br>
+					<input type="checkbox" value="Owner"/>Owner<br>
+					<input type="checkbox" value="Builder"/>Builder<br>
+					<input type="checkbox" value="Dealer"/>Dealer
+					<hr/>
+					<p> <b>LEASE </b></p>
+					<b>MIN</b>
+                    <form><input type="number" min="25000" max="100000" value="25000" step="5000"></form>
+					<b>MAX</b>
+                    <form><input type="number" min="30000" max="900000" value="30000" step="5000"></form>
+					<hr/>
+					<p> <b>AGREEMENT</b><p>
+					<select>
+                        <option>--select--</option>
+						<option>0-2 Years</option>
+						<option>2-5 Years</option>
+						<option>5-10 Years</option>
+						<option>+10 Years</option>
+					</select>
+					<hr/>
+					     <div>
+                            <div class="inner">
+							<p> <b>AREA </b></p>
+							<input type="text" placeholder="Min"/><br/><br/>
+							<input type="text" placeholder="Max"/>
+						</div>
+					</div>
+					<br/>
+					<select>
+                        <option>--select--</option>
+					  <option>sq.ft</option>
+					  <option>sq.Yards</option>
+					  <option>sq.Meters</option>
+					  <option>Grounds</option>
+					  <option>Acres</option>
+					  <option>Hectares</option>
+					</select>
+					
+					<hr/>
+					<p> <b>COMMERCIAL TYPE </b></p>
+					<select>
+                        <option>--select--</option>
+						<option>Office space</option>
+						<option>Commercial Shop</option>
+						<option>Cold storage</option>
+						<option>Agricultural Land</option>
+						<option>Guest Lease</option>
+						<option>Space in Retail Mall</option>
+					</select>
+					
+					<hr/>
+					<p> <b>FURNISHING </b></p>
+					<select>
+                        <option>--select--</option>
+						<option>Fully Furnished</option>
+						<option>Semi Furnished</option>
+						<option>Un furnished/Raw</option>
+					</select>
+					<hr/>
+					<p> <b>AGE OF PROPERTY</b></p>
+					<select>
+                        <option>--select--</option>
+					    <option>0-2years</option>
+						<option>2-5years</option>
+						<option>6-10years</option>
+						<option>+10years</option>
+                    </select>
+					<hr/>
+					<input type="checkbox"/>With Photos<br>
+					<input type="checkbox"/>With Videos
+					<hr/>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="col-md-12">
+					<div class="middle">
+					<p><b> <a>Commercial office space in Madhapur</a></b></p>
+						<div class="col-md-2">
+							<img src="images/home3.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+							<figcaption><a>5Photos & 1Video</a></figcaption>
+						</div>
+						<div class="col-md-6 middle_des">
+							<span>
+								<b>&nbsp; Super built-up Area</b> : 1345Sq.Ft. @ RS.2600/Sq.Ft
+								<b>&nbsp;&nbsp;Society</b>:Rv Kaustuba<br>
+
+							</span>
+								<hr/>
+							<span>
+								<a href="leasehome1.html" class="text_ref">
+								<b>&nbsp;&nbsp;Description:</b>Sree shakti arcade, located in &nbsp;&nbsp;hyderabad, is one of the residential cum commercial &nbsp;&nbsp;developments of sree shakti deve... 
+								</a>
+								<hr>
+								<b>&nbsp;&nbsp;Builder:</b>Sree shakti Developers <b>Posted</b> Nov 18,2017
+							</span>
+							<a style="color:white" class="btn btn-primary" data-toggle="popover" title="Want to Contact our Customer Care Executive:" data-content="+999888444333">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span id="p1"><i id="hide" class="fa fa-star-o  fa-2x" aria-hidden="true"></i>Shortlist</span>
+                            <span id="p2"><i id="show" class="fa fa-star  fa-2x" aria-hidden="true"></i>Shortlisted</span>&nbsp;&nbsp;
+	                        <!-- Trigger the modal with a button -->
+                              <i id="report" class="fa fa-ban" aria-hidden="true" data-toggle="modal" data-target="#myModal"></i> 
+                              Report a problem
+                              <!-- Modal -->
+                              <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                      <h4 class="modal-title">Enter your details to post a compliant</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"><br><br>
+                                        Phone No:<input type="text"><br><br>
+                                        Email Id:&nbsp;&nbsp;&nbsp;<input type="email"><br><br>
+                                        <input type="checkbox">Inappropriate&nbsp;&nbsp;
+                                        <input type="checkbox">Fake<br><br>
+                                        <textarea rows="4" cols="50"></textarea>
+                                    </div>
+                                    <div class="modal-footer">
+                                     <input type="submit" class="btn btn-success" data-dismiss="modal">         
+                                     <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+                                  <!--// Modal content-->
+                                </div>
+                              </div>
+                              <!-- //Modal -->
+                            <!-- //Trigger the modal with a button -->
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="middle">
+						<p><b> <a>Commercial office space in Madhapur</a></b></p>
+						<div class="col-md-2">
+							<img  src="images/home4.jpg"onclick="openModal();currentSlide(1)" class="hover-shadow cursor"/>
+							<figcaption><a>3Photos & 1Video</a></figcaption>
+						</div>
+						<div class="col-md-6 middle_des">
+							<span>
+								<b>&nbsp; Super built-up Area</b> : 1345Sq.Ft. @ RS.2600/Sq.Ft
+								<b>&nbsp;&nbsp;Society</b>:Rv Kaustuba<br>
+							</span>
+							<hr/>
+							<span>
+								<b>&nbsp;&nbsp;Description:</b> Sree shakti arcade, located in &nbsp;&nbsp;hyderabad, is one of the residential cum commercial &nbsp;&nbsp;developments of sree shakti deve... 
+								<hr>
+								<b>&nbsp;&nbsp;Builder:</b>Sree shakti Developers <b>Posted</b> Nov 18,2017
+							</span>
+							<input type="button" class="btn btn-primary" value="Contact Us "/>&nbsp;&nbsp;&nbsp;&nbsp;
+							<i class="fa fa-star" aria-hidden="true"></i>Shortlist&nbsp;&nbsp;&nbsp;&nbsp;
+							<i class="fa fa-ban" aria-hidden="true"></i> Report a problem
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="middle">
+						<p><b> <a>Guest house in Hyderabad</a></b></p>
+						<div class="col-md-2">
+							<img src="images/home5.jpeg">
+							<figcaption><a>5Photos & 1Video</a></figcaption>
+						</div>
+						<div class="col-md-6 middle_des">
+							<span>
+								<b>&nbsp; Super built-up Area</b> : 1345Sq.Ft. @ RS.2600/Sq.Ft
+								<b>&nbsp;&nbsp;Society</b>:Rv Kaustuba<br>	
+							</span>
+								<hr/>
+							<span>
+								<b>&nbsp;&nbsp;Description:</b>Sree shakti arcade, located in &nbsp;&nbsp;hyderabad, is one of the residential cum commercial &nbsp;&nbsp;developments of sree shakti deve... 
+								<hr>
+								<b>&nbsp;&nbsp;Builder:</b>Sree shakti Developers <b>Posted</b> Nov 18,2017
+							</span>
+							<input type="button" class="btn btn-primary" value="Contact Us "/>&nbsp;&nbsp;&nbsp;&nbsp;
+							<i class="fa fa-star" aria-hidden="true"></i>Shortlist&nbsp;&nbsp;&nbsp;&nbsp;
+							<i class="fa fa-ban" aria-hidden="true"></i> Report a problem
+					   </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+	</div>
+    
+	<div id="myModal2" class="modal2" >
+		<span class="close2 cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content2">
+			<div class="column"> 
+				<img class="demo cursor" src="images/rent1.jpg" onclick="currentSlide(1)">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="http://www.corporatedge.co.in/img/commercial-office-spaces-corporatedge.jpg" onclick="currentSlide(2)">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="http://labelme.csail.mit.edu/Images/users/antonio/static_sun_database/c/cafeteria/sun_afkmnlytenlsywia.jpg" onclick="currentSlide(3)" >
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="http://www.sgischool.in/Infrastructure/Conference2.jpg" onclick="currentSlide(4)">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				  <img src="images/rent1.jpg">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">2 / 4</div>
+			  <img src="http://www.corporatedge.co.in/img/commercial-office-spaces-corporatedge.jpg">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">3 / 4</div>
+			  <img src="http://labelme.csail.mit.edu/Images/users/antonio/static_sun_database/c/cafeteria/sun_afkmnlytenlsywia.jpg">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">4 / 4</div>
+			  <img src="http://www.sgischool.in/Infrastructure/Conference2.jpg">
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			<div class="caption-container">
+			  <p id="caption"></p>
+			</div>
+		</div>
+	</div>
+	<!-- //body -->
+    
+	<!-- footer -->
+    <br/><br/><br/>
+	<div class="footer">
+		<div class="container">
+			<h2><a href="index.html">Hello Properties</a></h2>
+			<h3>Subscribe To Our Newsletter</h3>
+			<p class="footer_paragraph">Subscribe to our newsletter and we will inform you about newest projects and promotions.</p>
+			<form action="#" method="post">
+				<input type="email" name="email" placeholder="Your email..." required="">
+				<input type="submit" value="Subscribe">
+			</form>
+			<div class="footer_nav">
+				<div class="footer_nav_left">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="news.html">News</a></li>
+					</ul>
+				</div>
+				<div class="footer_nav_right">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<p>© 2018 Hello Properties. All rights reserved | Design by <a href="#">Epitychis Info Labs Pvt.Ltd</a></p>
+		</div>
+	</div>
+	<!-- //footer -->
+	
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- start-smooth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!-- //here ends scrolling icon -->
+	<script src="js/bootstrap.js"></script>
+	
+	<!-- images-slider -->
+	<script src="js/images-slider.js"></script>
+    <!-- //images-slider search -->
+    
+    <!-- autocomplete search -->
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&region=in"  type="text/javascript"></script>
+    <script src="js/auto-search.js"></script>
+	<!-- //autocomplete search -->
+    
+    <!-- buttons -->
+	<script src="js/buttons.js"></script>
+    <!-- //buttons -->
+
+</body>
+</html>
+	

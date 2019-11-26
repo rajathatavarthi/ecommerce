@@ -1,0 +1,477 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+
+    <title>HP:Rent Property</title>
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+    <!-- CSS Files -->
+    <link href="css/sell1.css" rel="stylesheet" />
+    <link href="css/sell2.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="head" class="container-fluid">
+        <a href="index.html"><img src="images/logo.png" width="100px" height="60px"/></a>
+        <span>
+            <div class="dropdown">
+              <button class="dropbtn">Home <i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-content">
+                <a href="buyres.html">Buy</a>
+                <a href="rentres.html">Rent</a>
+				<a href="leaseres.html">Lease</a>
+                <a href="dealers.html">Partners</a>
+              </div>
+            </div>	
+        </span>
+        <div id="d2">
+            <select>
+                <option>Property Type</option>
+                <option>Commerical Property</option>
+                <option>Residential Property </option>
+            </select>
+            <input type="text" placeholder="Type Location or Project/City" />
+            <input type="submit" class="btn btn-primary" value="Search" />
+        </div>
+        <ul id="s1">
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bars fa-lg" style="color:white;
+                cursor: pointer;"></i></a>
+                <ul style="margin-left:-80px;" class="dropdown-menu agile_short_dropdown">
+                    <li><a href="profile.html">My Profile</a></li>
+                    <li><a href="shortlist.html">My Shortlist</a></li>
+                    <li><a href="sell.html">Sell/Rent Property</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="price.html">Price Trends</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="image-container set-full-height" style="background-image: url('images/cloud.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+        <!--   Big container   -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <!--      Wizard container        -->
+                    <div class="wizard-container">
+                        <div class="card wizard-card" data-color="red" id="wizard">
+                            <form action="" method="">
+                                <div class="wizard-header">
+                                    <h3 class="wizard-title">
+                                        Rent Property
+                                    </h3>
+                                </div>
+                                <div class="wizard-navigation">
+                                    <ul>
+                                        <li><a href="#details" data-toggle="tab">User Info</a></li>
+                                        <li><a href="#i-property" data-toggle="tab">Property Info</a></li>
+                                        <li><a href="#location" data-toggle="tab">Location</a></li>
+                                        <li><a href="#d-properties" data-toggle="tab">Detail of Properties</a></li>
+                                        <li><a href="#area" data-toggle="tab">Area</a></li>
+                                        <li><a href="#price" data-toggle="tab">Price Details</a></li>
+                                        <li><a href="#attachment" data-toggle="tab">Photos of Property</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-content">
+                                    <div class="tab-pane" id="details">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h4 class="info-text">I am</h4>
+                                            </div>
+                                            <div class="col-sm-10 col-sm-offset-1">
+                                                <div class="col-sm-4">
+                                                    <div class="choice" data-toggle="wizard-radio">
+                                                        <fieldset class="group1"><input type="radio" name="job" value="Design" ></fieldset>
+                                                        <div class="icon">
+                                                            <i class="material-icons">person</i>
+                                                        </div>
+                                                        <h6>Owner</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="choice" data-toggle="wizard-radio">
+                                                        <fieldset class="group1"><input type="radio" name="job" value="Code" ></fieldset>
+                                                        <div class="icon">
+                                                            <i class="fa fa-handshake-o " aria-hidden="true"></i>
+                                                        </div>
+                                                        <h6>Dealer</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="choice" data-toggle="wizard-radio">
+                                                        <fieldset class="group1"><input type="radio" name="job" value="Code" ></fieldset>
+                                                        <div class="icon">
+                                                            <i class="material-icons">business</i>
+                                                        </div>
+                                                        <h6>Builder</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of Info-->
+
+                                    <div class="tab-pane" id="i-property">
+                                        <div class="row">
+                                            <div class="col-sm-10 col-sm-offset-1">
+                                                <div class="col-sm-3">
+                                                    <div class="form-group ">
+                                                        <label class="control-label">Property Type</label>
+                                                        <select name="property type" class="form-control" required>
+                                                            <option selected=""></option>
+                                                            <option value="1"> Residential Apartments </option>
+                                                            <option value="2"> Residential Land </option>
+                                                            <option value="3"> Independent House/Villa </option> 
+                                                            <option value="4"> Independent/Builder Floor </option>
+                                                            <option value="5"> serviced Apartments  </option>
+                                                            <option value="6"> Farm House </option>
+                                                            <option value="7"> Studio Apartment </option>
+                                                            <option value="8"> Commercial Shop </option>
+                                                            <option value="9"> Commercial Land </option>
+                                                            <option value="10"> Commercial Showroom  </option>
+                                                            <option value="11"> Commercial Office </option>
+                                                            <option value="12"> Cold Storage </option>
+                                                            <option value="13"> Guest House </option>
+                                                            <option value="14"> Hotels/Resorts </option>
+                                                            <option value="15"> Industrial Land </option>
+                                                            <option value="16"> Agricultural Land </option>
+                                                            <option value="17"> Office in It Park </option>
+                                                            <option value="18"> Office in Bussiness Park </option>
+                                                            <option value="19"> Space in Retail mall </option>
+                                                            <option value="20"> Factory </option>
+                                                            <option value="21"> Others </option>
+                                                        </select>
+                                                        <h5><b>Description:</b></h5>
+                                                        <textarea rows="5" cols="80"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3 col-md-3 col-xs-12">
+                                                    <div class="form-group ">
+                                                        <label class="control-label">Availability</label>
+                                                        <select name="property" class="form-control" required>
+                                                            <option selected=""></option>
+                                                            <option>Ready to move</option>
+                                                            <option>Under Construction</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3 col-md-3 col-xs-12">
+                                                    <div class="form-group ">
+                                                        <label class="control-label">Age of property</label>
+                                                        <select name="age of property" class="form-control" required>
+                                                            <option selected=""></option>
+                                                            <option value="1">0-1 years</option>
+                                                            <option value="2">1-5 years</option>
+                                                            <option value="3">5-10 years</option>
+                                                            <option value="4">10-15 years</option>
+                                                            <option value="5">+15 years</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3 col-md-3 col-xs-12">
+                                                    <div class="form-group ">
+                                                        <label class="control-label">Type of Transaction</label>
+                                                        <select name="property" class="form-control" required>
+                                                            <option selected=""></option>
+                                                            <option>New Property</option>
+                                                            <option>Re-sale</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of Property info-->
+
+                                    <div class="tab-pane" id="location">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h4 class="info-text">Location</h4>
+                                            </div>
+                                            <div class="col-sm-10 col-sm-offset-1">
+                                                <div class="col-sm-6 col-md-3 col-xs-12">
+                                                    <div class="form-group ">
+                                                        <label class="control-label">CITY</label>
+                                                        <select name="city" class="form-control" required>
+                                                            <option disabled="" selected=""></option>
+                                                            <option value="1">Ahmedabad</option>    
+                                                            <option value="2">Banglore</option>
+                                                            <option value="3">Bhadurghad</option>
+                                                            <option value="4">Bhopal</option>
+                                                            <option value="5">Bhinadi</option>        
+                                                            <option value="6">Chandigarh</option>
+                                                            <option value="7">Chattisgarh</option> 
+                                                            <option value="8">Chennai</option>
+                                                            <option value="9">Coimbatore</option> 
+                                                            <option value="10">Delhi</option>      
+                                                            <option value="11">Dharuheda</option>
+                                                            <option value="12">Faridhabad</option>
+                                                            <option value="13">Ghaziabad</option>    
+                                                            <option value="14">Greater Nodia</option>
+                                                            <option value="15">Guragon</option>
+                                                            <option value="16">Hyderabad</option>
+                                                            <option value="17">Indore</option>      
+                                                            <option value="18">Jaipur</option>
+                                                            <option value="19">Kochi</option>         
+                                                            <option value="20">Mangalore</option>
+                                                            <option value="21">Mumbai</option> 
+                                                            <option value="22">Nagpur</option>
+                                                            <option value="23">Nodia</option>
+                                                            <option value="24">Pune</option>
+                                                            <option value="25">Thane</option>
+                                                            <option value="26">Trivandrum</option> 
+                                                            <option value="27">Udaipur</option>	
+                                                            <option value="28">Vijayawada</option>
+                                                            <option value="29">Others</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label">LOCALITY</label>
+                                                        <input name="locality" type="text" class="form-control" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3 col-xs-12">
+                                                    <div class="form-group ">
+                                                        <label class="control-label">NAME OF THE PROJECT</label>
+                                                        <input name="project name" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3 col-xs-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label">ADDRESS</label>
+                                                        <input name="address" type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of location info-->
+
+                                    <div class="tab-pane" id="d-properties">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h4 class="info-text">Details of Property</h4>
+                                            </div>
+                                            <div class="col-sm-10 col-sm-offset-1">
+                                                <div class="col-sm-6 col-md-3 col-xs-12">
+                                                    <div class="form-group ">
+                                                        <label class="control-label">Bed Rooms</label>
+                                                        <select name="bed rooms" class="form-control" required>
+                                                            <option selected=""></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">more than 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3 col-xs-12">
+                                                    <div class="form-group ">
+                                                        <label class="control-label">Balconies</label>
+                                                        <select name="balconies" class="form-control" required>
+                                                            <option selected=""></option>
+                                                            <option value="1">0</option>
+                                                            <option value="2">1</option>
+                                                            <option value="3">2</option>
+                                                            <option value="4">more than 2</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3 col-xs-12">
+                                                    <div class="form-group ">
+                                                        <label class="control-label">Bathrooms</label>
+                                                        <select name="bathrooms" class="form-control" required>
+                                                            <option selected=""></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">more than 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3 col-xs-12">
+                                                    <div class="form-group ">
+                                                        <label class="control-label">Total Rooms</label>
+                                                        <select name="total rooms" class="form-control" required>
+                                                            <option selected=""></option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">more than 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3 col-xs-12">
+                                                    <div class="form-group ">
+                                                        <label class="control-label">Floor No.</label>
+                                                        <select name="floor no" class="form-control" required>
+														<option selected=""></option>
+	                                                	<option value="1">Basement</option>
+		                                                <option value="2">Ground</option>
+		                                                <option value="3">1st Floor</option>
+		                                                <option value="4">2nd Floor</option>
+		                                                <option value="5">3rd Floor</option>
+		                                                <option value="6">4th Floor</option>
+                                                        <option value="7">other</option>
+	                                                </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3 col-xs-12">
+                                                    <div class="form-group ">
+                                                        <label class="control-label">Furnished</label>
+                                                        <select name="furnished" class="form-control" required>
+                                                            <option selected=""></option>
+                                                            <option value="1">Un Furnished</option>
+                                                            <option value="2">Semi Furnished</option>
+                                                            <option value="3">Fully Furnished</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-3 col-xs-12">
+                                                    <div class="form-group ">
+                                                        <label class="control-label">Parking</label>
+                                                        <select name="parking" class="form-control" required>
+                                                            <option selected=""></option>
+                                                            <option value="1">Opened</option>
+                                                            <option value="2">2 Wheeler + 4Wheeler</option>
+                                                            <option value="3">Only 2 Wheeler</option>
+                                                            <option value="4">Only 4 Wheeler </option>
+                                                            <option value="5">Covered</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End of details of property-->
+
+                                    <div class="tab-pane" id="area">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h4 class="info-text">Area</h4>
+                                            </div>
+                                            <div class="col-sm-3 col-md-3 col-xs-12">
+                                                <div class="form-group ">
+                                                    <label class="control-label">Total Area</label>
+                                                    <input name="total area" type="text" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-md-3 col-xs-12">
+                                                <div class="form-group ">
+                                                    <label class="control-label">Type</label>
+                                                    <select name="type" class="form-control" required>
+														<option selected=""></option>
+	                                                	<option value="1">Yards</option>
+	                                                    <option value="2">Square feet</option>
+	                                                    <option value="3">Square meters</option>
+	                                                    <option value="4">Acres</option>
+	                                                </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-md-3 col-xs-12">
+                                                <div class="form-group">
+                                                    <label class="control-label">Carpet Area</label>
+                                                    <input name="carpet area" type="text" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3 col-md-3 col-xs-12">
+                                                <div class="form-group ">
+                                                    <label class="control-label">Type</label>
+                                                    <select name="type" class="form-control" required>
+														<option selected=""></option>
+	                                                	<option>Yards</option>
+	                                                    <option>Square feet</option>
+	                                                    <option>Square meters</option>
+	                                                    <option>Acres</option>
+	                                                </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of location Area-->
+
+                                    <div class="tab-pane" id="price">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h4 class="info-text">Price Details of Property</h4>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="form-group ">
+                                                    <label class="control-label">Expected Price</label>
+                                                    <input name="expected price" type="number" class="form-control" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="form-group ">
+                                                    <label class="control-label">Price for squarefeet</label>
+                                                    <input name="squarefeet price" type="number" class="form-control" required>
+                                                </div> 
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <div class="form-group ">
+                                                    <label class="control-label">Maintainence charge</label>
+                                                    <input name="maintainence charge" type="number" class="form-control" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of location info-->
+
+                                    <div class="tab-pane" id="attachment">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <h4 class="info-text">Choose a file to upload</h4>
+                                            </div>
+                                            <div class="col-sm-4 col-md-4 col-xs-4" style="visibility: hidden;"></div>
+                                            <div class="col-sm-3">
+                                                <div class="form-group">
+                                                    <button>Choose File
+                                                        <input type="file" name="file upload" class="form-control" multiple="true" required>
+                                                    </button>
+                                                </div>
+                                                <br>
+                                                <button type="submit" class="btn btn-primary" style="background: blue;">Upload</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wizard-footer">
+                                    <div class="pull-right">
+                                        <input type='button' class='btn btn-next btn-fill btn-danger btn-wd' name='next' value='Next'/>
+                                        <input type='button' class='btn btn-finish btn-fill btn-danger btn-wd' name='finish' value='Finish'/>
+                                    </div>
+                                    <div class="pull-left">
+                                        <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous'/>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- wizard container -->
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+        <!--  big container -->
+    </div>
+</body>
+<!--   Core JS Files   -->
+<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery.bootstrap.js" type="text/javascript"></script>
+
+<!--  Plugin for the Wizard -->
+<script src="assets/js/material-bootstrap-wizard.js"></script>
+
+<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+<script src="assets/js/jquery.validate.min.js"></script>
+
+</html>
